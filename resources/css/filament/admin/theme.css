@@ -1,0 +1,14 @@
+@import '../../../../vendor/filament/filament/resources/css/theme.css';
+
+@source '../../../../app/Filament/**/*';
+@source '../../../../resources/views/filament/**/*';
+
+.fi-simple-layout {
+    background-image: url('/public/images/03.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.fi-simple-main{
+       @apply bg-white/70
+}
