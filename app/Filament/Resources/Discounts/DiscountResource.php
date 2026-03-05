@@ -16,6 +16,11 @@ use Filament\Tables\Table;
 
 class DiscountResource extends Resource
 {
+    public static function canAccess(): bool
+    {
+        return false;
+        // return static::shield()->canAccessResource(static::class);
+    }
     protected static ?string $model = Discount::class;
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::PercentBadge;
